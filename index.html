@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+    
+    <header>
+        <div class="head">
+            <h1>Shop now</h1>
+        </div>
+        <div id="filters" class="filtersContainer">
+            <div class="filtersContainer--buttonsCategory">
+                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarTodos">Todos Produtos</button>
+                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarHortifruti">Hortifruti</button>
+                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarPanificadora">Panificadora</button>
+                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarLaticinios">Laticínios</button>
+            </div>
+
+            <div class="containerBuscaPorNome">
+                
+                <input type="text" placeholder="Pesquisar por" class="campoBuscaPorNome">
+                <button class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome"><img class="lupa" src="https://icon-library.com/images/search-icon-white/search-icon-white-16.jpg"></button>
+
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <!-- <div class="containerPrecoTotal">
+            <div class="precoTotalTextDiv">
+                <div class="imagemContainer">
+                    <img class="iconContainer" src="./src/img/warning.png">
+                </div>
+                <div>
+                    <p>Valor total dos produtos da sessão selecionada</p>
+                </div>
+            </div>
+            <div class="precoTotalLabel">
+                <p>R$<span id="precoTotal">00.00</span></p>
+            </div>
+        </div> -->
+        <div class="containerContent">
+            <div class="containerListaProdutos" id="listProdutos">
+                <ul class="listProdutos">
+                    
+                </ul>
+                </div>
+                <div class="containerCart">
+                <div class="containerCart--header">
+                    <img src="./src/img/cart.png">
+                    <span class="textCart">Carrinho</span>
+                </div>
+                <div class="containerCart--products">
+                    <div class="containerCart--noProducts">
+                        <img class="cartBag" src="./src/img/bag.svg">
+                        <span class="noProducts--span">Por enquanto não temos produtos no carrinho</span>
+                    </div>
+                    <ul class="listCart--products">
+                        <!-- <li class="listCart--list">
+                            <div class="listCart--img">
+                                <img class="img--product" src="./src/img/banana.png">
+                            </div>
+                            <div class="listCart--content">
+                                <div class="listCart--span">
+                                    <span class="span-title">
+                                        Banana
+                                    </span>
+                                    <span class="span-category">
+                                        Hortifruti
+                                    </span>
+                                    <span class="span-price">
+                                        R$ 2,00
+                                    </span>
+                                </div>
+                                <button class="img-trash removeProduct">
+                                    <img class="trash-icon" src="./src/img/trash.svg">
+                                </button>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="containerCart--total">
+                    <div class="containerCart--totalQuantity">
+                        <span class="quantitySpan">Quantidade</span>
+                        <span class="quantityProducts">1</span>
+                    </div>
+                    <div class="containerCart--totalPrice">
+                        <span class="quantitySpan">Total</span>
+                        <span class="quantitySpan quantityPrice">R$ 2,00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="src/js/dataProdutos.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>

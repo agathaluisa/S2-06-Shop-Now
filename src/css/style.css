@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CABEÇALHO */
+.filtersContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 90%;
+    padding: 30px 75px;
+}
+
+.head {
+    background-color: white;
+    width: 100%;
+    height: 55px;
+    padding: 18px;
+    box-shadow: 0px 6px 15px rgba(68, 68, 68, 0.486);
+}
+
+h1 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+}
+
+.estiloGeralBotoes{
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.9rem;
+    margin-right: 7px;
+    transition: 0.5s;
+
+}
+
+.filtersContainer--buttonsCategory{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.estiloGeralBotoes--filtrarTodos {
+    color: #12B886;
+    background-color: #12B8860D;
+    height: 40px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.estiloGeralBotoes--filtrarTodos:hover {
+    color: white;
+    background-color: #12B886;
+    transition: 0.5s;
+}
+
+.estiloGeralBotoes--filtrarHortifruti {
+    color: #12B886;
+    background-color: #12B8860D;
+    height: 40px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.estiloGeralBotoes--filtrarHortifruti:hover {
+    color: white;
+    background-color: #12B886;
+    transition: 0.5s;
+}
+
+.estiloGeralBotoes--filtrarPanificadora {
+    color: #12B886;
+    background-color: #12B8860D;
+    height: 40px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.estiloGeralBotoes--filtrarPanificadora:hover {
+    color: white;
+    background-color: #12B886;
+    transition: 0.5s;
+}
+
+.estiloGeralBotoes--filtrarLaticinios {
+    color: #12B886;
+    background-color: #12B8860D;
+    height: 40px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.estiloGeralBotoes--filtrarLaticinios:hover {
+    color: white;
+    background-color: #12B886;
+    transition: 0.5s;
+}
+
+.containerBuscaPorNome {
+    display: flex;
+}
+
+.lupa{
+    width: 15px;
+    height: 15px;
+    align-items: center;
+    
+}
+
+.campoBuscaPorNome {
+    background-color: #F1F3F5;
+    border-radius: 8px;
+    border: none;
+    padding: 0 10px;
+    margin-right: 7px;
+    width: 250px;
+    outline: none;
+    
+}
+
+.estiloGeralBotoes--botaoBuscaPorNome {
+    background-color: #12B886;
+    color: white;
+    border-radius: 8px;
+    width: 40px;
+    height:40px;
+    padding:12px;
+    transition: 0.5s;
+}
+
+.estiloGeralBotoes--botaoBuscaPorNome:hover{
+    box-shadow: 0px 4px 20px -10px #04271d;
+    transition: 0.5s;
+}
+
+/* CONTEÚDO */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.containerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.containerListaProdutos {
+    width: 100%;
+}
+
+.containerListaProdutos ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 45px;
+}
+
+.containerListaProdutos .product-item {
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 5px;
+    transition: ease-in-out .1s;
+    width: 100%;
+    max-width: 230px;
+    text-align: left;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.containerListaProdutos .product-item:hover {
+    box-shadow: 3px 3px 13px 1px rgb(146 146 146);
+    transition: 0.5s;
+}
+
+.containerListaProdutos .product-item img {
+    width: 100%;
+}
+
+.containerListaProdutos .product-item h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #212529;
+}
+
+.containerListaProdutos .product-item p {
+    font-size: 12px;
+    color: #212529;
+    vertical-align: baseline;
+}
+.containerListaProdutos .product-item .span-category {
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    color: #868E96;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* PREÇO TOTAL */
+.containerPrecoTotal {
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: white;
+    width: 1100px;
+    height: 45px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 20px -10px rgb(0, 0, 0);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    justify-content: space-between;
+}
+.containerPrecoTotal p{
+    color: #212529;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.iconContainer{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+span{
+    justify-content: flex-end;
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    color: #868E96;
+}
+
+.precoTotalTextDiv {
+    display: flex;
+    align-items: center;
+}
+
+.imagemContainer {
+    display: flex;
+    align-items: center;
+}
+
+.precoTotalLabel {
+    background-color: black;
+    padding: 7.5px;
+    border-radius: 5px;
+
+}
+
+.precoTotalLabel p {
+    color: white;
+}
+
+.containerCart {
+    background-color: #FFFF;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 82px;
+    border-radius: 12px 12px 0px 0px;
+    height: 290px;
+}
+
+.containerCart--header {
+    background-color: #12B886;
+    width: 100%;
+    height: 50px;
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+.price-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price-button button {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    padding: 7px;
+    border-radius: 8px;
+    color: #12B886;
+    background-color: #12B8860D;
+    transition: 0.5s;
+}
+
+.price-button button:hover{
+    background-color: #12B886;
+    color: white;
+    transition: 0.5s;
+}
+
+.content-item {
+    height: 110px;
+}
+
+.textCart {
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.containerCart--noProducts {
+    background-color: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 268px;
+}
+
+.cartBag {
+    padding: 20px 30px 10px 30px;
+}
+
+.noProducts--span {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerCart--totalQuantity {
+    background-color: #F8F9FA;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.containerCart--totalPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.quantitySpan {
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.quantityProducts {
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.containerCart--total {
+    display: none;
+
+}
+
+.img--product {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.listCart--list {
+    margin-top: 20px;
+    display: flex;
+    padding: 5px;
+    width: 100%;
+
+}
+
+.listCart--span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listCart--content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.img-trash {
+    background-color: #F8F9FA;
+    width: 24px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+
+.img-trash:hover {
+    background-color: rgba(255, 0, 0, 0.712);
+    transition: 0.5s;
+}
+
+.span-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+}
+
+.span-price {
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+}
+
+.listCart--products {
+    display: none;
+    height: auto;
+    min-height: 473px;
+    max-height: 473px;
+    overflow-y: auto;
+}
